@@ -689,7 +689,7 @@ theme.equalHeights = function () {
   } else {
     theme.variables.productPageSticky = false;
   }
-}
+
 
 theme.hideSingleSelectors = function () {
   if (!theme.cache.$productSelectors.length) {
