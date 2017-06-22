@@ -670,27 +670,6 @@ theme.equalHeights = function () {
 
 
 
-  var productCopyHeight = theme.cache.$productSingleMeta.outerHeight();
-  var productImagesHeight = theme.cache.$productImages.height();
-
-  /*============================================================================
-    Calculate when to detach fixed element to avoid content overlap.
-    Subtract product copy height from the limit because plugin uses offset().top
-  ==============================================================================*/
-  var calcLimit = theme.cache.$productSingleWrapper.offset().top + theme.cache.$productSingleWrapper.height();
-  calcLimit -= productCopyHeight;
-
-  // Init sticky if desc shorter than images and fits in viewport
-  if (productCopyHeight < productImagesHeight && productCopyHeight < theme.cache.$window.height()) {
-    theme.variables.productPageSticky = true;
-    theme.cache.$productSingleMeta.scrollToFixed({
-      limit: calcLimit
-    });
-  } else {
-    theme.variables.productPageSticky = false;
-  }
-
-
 theme.hideSingleSelectors = function () {
   if (!theme.cache.$productSelectors.length) {
     return;
