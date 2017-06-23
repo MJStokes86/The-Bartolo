@@ -427,8 +427,8 @@ theme.init = function () {
   theme.setBreakpoints();
   theme.fitNav();
   theme.initHero();
-  theme.afterCartLoad();
-  theme.checkoutIndicator();
+  // theme.afterCartLoad();
+  // theme.checkoutIndicator();
   theme.collectionParallax();
   
     theme.initCollageGrid();
@@ -436,10 +436,10 @@ theme.init = function () {
   theme.collectionBackButton();
   theme.hideSingleSelectors();
   theme.styleTextLinks();
-  theme.searchModal();
+  // theme.searchModal();
 
   
-    theme.productImageZoom();
+    // theme.productImageZoom();
   
 
   // Functions to run on load so image sizes can be calculated
